@@ -7,16 +7,18 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <div id = "navbar"></div>
-        <script>
-            fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('box-container').innerHTML = data;
-            });
-        </script>
-        <div>
-            <ul id = "contests">
+        <div id = "navbar">
+            <ul>
+                <li>
+                    <a href = "index.html"> Home </a>
+                </li>
+                <li>
+                    <a href = "contests.html"> Contests </a>
+                </li>
+            </ul>
+        </div>
+        <div id = "contests">
+            <ul>
                 <li> CCO Bronze Medalist 2024 </li>
                 <li> CCC Senior HR 2024 </li>
             </ul>
