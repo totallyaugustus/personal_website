@@ -7,9 +7,19 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <ul id = "contests">
-            <li> CCO Bronze Medalist 2024 </li>
-            <li> CCC Senior HR 2024 </li>
-        </ul>
+        <div id = "navbar"></div>
+        <script>
+            fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('box-container').innerHTML = data;
+            });
+        </script>
+        <div>
+            <ul id = "contests">
+                <li> CCO Bronze Medalist 2024 </li>
+                <li> CCC Senior HR 2024 </li>
+            </ul>
+        </div>
     </body>
 </html>
